@@ -1,4 +1,4 @@
-const { Router } = require('express');
+import { Router } from 'express';
 
 const routes = new Router();
 
@@ -6,4 +6,6 @@ routes.get('/', (request, response) => {
     return response.json({message : "Seja bem vindo ao GoBarber"})
 });
 
-module.exports = routes;
+//module.exports = routes;
+
+export default routes
